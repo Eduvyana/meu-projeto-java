@@ -3,11 +3,10 @@ package com.bank.model;
 import java.math.BigDecimal;
 
 public class Funcionarios extends Pessoa {
-	
+	// atributos
 	private BigDecimal  salario;
 	private String matricula;
 	
-	//TODO Incrementar a soma do terço das férias
 	public BigDecimal getSalarioAnual() {
 		BigDecimal meses = new BigDecimal(13);
 		BigDecimal terco = this.salario.divide(new BigDecimal(3));
